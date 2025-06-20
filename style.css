@@ -46,96 +46,12 @@ body{
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
     color: #232323;
-    font-size: 35px;
+    font-size: 1.2em;
     font-family: space;
     overflow: auto;
     padding: 20px;
     text-align: left;
     width:626px;
-}
-
-.calc-button-row{
-    display: flex;
-    justify-content: space-between;
-    margin: 5% 0;
-}
-
-.calc-button{
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
-    background: rgba(255, 255, 255, 0.75);
-    border: 1px solid rgba(255, 255, 255, 0.01);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
-    color: #232323;
-    flex-basis: 20%;
-    font-family: inherit;
-    font-size: 24px;
-    height: 65px;
-}
-
-.calc-button:last-child{
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
-    background: rgba(255, 255, 255, 0.75);
-    border: 1px solid rgba(255, 255, 255, 0.01);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
-    color: #fff;
-    background: #d72880;
-}
-
-.calc-button:last-child:hover{
-    background-color: inherit;
-    color: inherit;
-}
-
-.calc-button:hover{
-    background-color: inherit;
-}
-
-.calc-button:active{
-    background-color: #ffef78;
-}
-
-.double{
-    flex-basis: 47%;
-}
-
-.triple{
-    flex-basis: 73%;
-}
-
-.Wellcome_cal{
-    color: aqua;
-    font-size: 22px;
-    font-style: inherit;
-
-}
-
-.plus_cal{
-    color: #eb92be;
-    font-size: 20px;
-}
-
-.minus_cal{
-    color: #eb92be;
-    font-size: 20px;
-}
-
-.multiplied_cal{
-    color: #eb92be;
-    font-size: 20px;
-}
-
-.Division_cal{
-    color: #eb92be;
-    font-size: 20px;
-}
-
-.equal_cal{
-    color: #eb92be;
-    font-size: 20px;
 }
 
 .help{
@@ -149,7 +65,7 @@ body{
     color: #232323;
     flex-basis: 20%;
     font-family: Georgia;
-    font-size: 24px;
+    font-size: 1.2em;
     height: 45px;
 }
 
@@ -169,4 +85,10 @@ body{
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
     color: #76d1b6;
     flex-basis: 20%;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1em;
+    padding: 15px;
+  }
 }
