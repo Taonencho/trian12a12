@@ -24,5 +24,20 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <audio id="bg-music" loop>
+  <source src="../../lv_0_20250621111236.mp3" type="audio/mpeg">
+</audio>
+<script>
+ const url = new URL(window.location.href);
+  const shouldPlay = url.searchParams.get("play");
+
+  if (shouldPlay === "1") {
+    const music = document.getElementById("bg-music");
+    document.body.addEventListener("click", () => {
+      music.volume = 0.1;
+      music.play();
+    }, { once: true });
+  }
+  </script>
 </body>
 </html>
